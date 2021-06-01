@@ -1,36 +1,24 @@
 import "./App.css";
 import React from "react";
-import { Route, Switch, Link } from "react-router-dom";
-import About from "./About";
-import Home from "./Home";
+import Nav from "./Nav";
+import SectionHome from "./SectionHome";
+import SectionDetails from "./SectionDetails";
+import SectionGifts from "./SectionGifts";
+import SectionTransport from "./SectionTransport";
+import SectionWeekend from "./SectionWeekend";
+import SectionRSVP from "./SectionRSVP";
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <nav>
-            <ul id="navigation">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+        <Nav />
+        <SectionHome />
+        <SectionDetails />
+        <SectionTransport />
+        <SectionWeekend />
+        <SectionGifts />
+        <SectionRSVP />
       </div>
     );
   }

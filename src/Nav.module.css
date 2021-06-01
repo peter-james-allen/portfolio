@@ -1,0 +1,25 @@
+.navBar {
+  min-height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navButton {
+  padding: 50px;
+  display: inline;
+  line-height: 50px;
+  font-family: "Spinnaker", sans-serif;
+  font-size: 15px;
+}
+
+.navButtonHover:hover {
+  color: darkred;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4848;
+}

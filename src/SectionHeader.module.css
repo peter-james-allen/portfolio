@@ -1,0 +1,43 @@
+.upper {
+  font-weight: bold;
+  font-family: spinnaker, sans-serif;
+  color: #4a4848;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+}
+
+.lower {
+  font-family: Lobster;
+  font-size: 0.5em;
+  color: white;
+  position: relative;
+  top: -50px;
+  left: 50%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 40%,
+    #9dbbe0 40%,
+    #9dbbe0 60%,
+    transparent 60%
+  );
+  width: max-content;
+  padding: 10px;
+}
+
+.container {
+  font-size: 100px;
+  width: 100%;
+  margin: auto;
+}
+
+.container::before {
+  display: block;
+  content: " ";
+  margin-top: -40px;
+  height: 80px;
+  visibility: hidden;
+  pointer-events: none;
+}
